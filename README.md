@@ -15,17 +15,6 @@ npx nuxi add <template> <name>
 ```
 npx nuxi add page index
 
-### 使用 \<NuxtPage\>
-
-```html
-<!-- app.vue -->
-<template>
-  <NuxtRouteAnnouncer />
-  <!-- <NuxtWelcome /> -->
-  <NuxtPage />
-</template>
-```
-
 ### 加入後台首頁 admin/index 
 
 ```
@@ -48,6 +37,17 @@ npx nuxi add page product/[id]
     <NuxtLink to="/admin" >Admin</NuxtLink>
     <NuxtLink :to="`/product/${1}`">product 1</NuxtLink>
   </div>
+</template>
+```
+
+### app.vue 使用 \<NuxtPage\>
+
+```html
+<!-- app.vue -->
+<template>
+  <NuxtRouteAnnouncer />
+  <!-- <NuxtWelcome /> -->
+  <NuxtPage />
 </template>
 ```
 
