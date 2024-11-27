@@ -27,7 +27,7 @@ npx nuxi add page admin/index
 npx nuxi add page product/[id]
 ```
 
-### index 頁面使用 <NuxtLink>
+### index 頁面使用 \<NuxtLink>
 
 ```html
 <!-- pages/index.vue -->
