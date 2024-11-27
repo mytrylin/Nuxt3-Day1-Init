@@ -25,3 +25,30 @@ npx nuxi add page index
   <NuxtPage />
 </template>
 ```
+
+### 加入後台首頁 admin/index 
+
+```
+npx nuxi add page admin/index
+```
+
+### 加入動態路由 product/[id]
+
+```
+npx nuxi add page product/[id]
+```
+
+### index 頁面使用 <NuxtLink>
+
+```html
+<!-- pages/index.vue -->
+<template>
+  <div>
+    <span>Page: index </span>
+    <NuxtLink to="/admin" >Admin</NuxtLink>
+    <NuxtLink :to="`/product/${1}`">product 1</NuxtLink>
+  </div>
+</template>
+```
+
+![alt text](image.png)
