@@ -1,75 +1,27 @@
-# Nuxt Minimal Starter
+# NUXT3 - Day1 - 建立專案
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+### 專案建立指令
 
-## Setup
-
-Make sure to install dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+```
+npx nuxi init [project name]
 ```
 
-## Development Server
+ npx nuxi init Nuxt3-Day1
 
-Start the development server on `http://localhost:3000`:
+### 加入目錄及頁面
 
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+npx nuxi add <template> <name>
 ```
+npx nuxi add page index
 
-Locally preview production build:
+### 使用 \<NuxtPage\>
 
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
+```html
+<!-- app.vue -->
+<template>
+  <NuxtRouteAnnouncer />
+  <!-- <NuxtWelcome /> -->
+  <NuxtPage />
+</template>
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
